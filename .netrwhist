@@ -1,0 +1,11 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =9
+let g:netrw_dirhist_1='/home/vinceh/.vim'
+let g:netrw_dirhist_2='/home/vinceh/l4t-k34/kernel/arch/arm/mach-tegra'
+let g:netrw_dirhist_3='/source/chromiumos/src/partner_private/private-kernel/arch/arm'
+let g:netrw_dirhist_4='/home/vinceh/source/l4t/kernel/drivers/video/tegra'
+let g:netrw_dirhist_5='/home/vinceh/images/main-chromeos_chromeos_dalmore_swqa-next_git-master_default_release/2010680/cros-13_03_28-04_04_59/nvscripts/end-user'
+let g:netrw_dirhist_6='/etc/init.d'
+let g:netrw_dirhist_7='/home/vinceh/source/linux-chromeos/drivers/clk/tegra'
+let g:netrw_dirhist_8='/home/vinceh/source/linux-chromeos/.git/rebase-apply'
+let g:netrw_dirhist_9='/home/vinceh/chromiumos/src/third_party/u-boot-next/files/spl'

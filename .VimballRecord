@@ -1,0 +1,1 @@
+tagbar.vmb: call delete('/home/vinceh/.vim/README.md')|call delete('/home/vinceh/.vim/autoload/tagbar.vim')|call delete('/home/vinceh/.vim/doc/tagbar.txt')|call delete('/home/vinceh/.vim/plugin/tagbar.vim')|call delete('/home/vinceh/.vim/syntax/tagbar.vim')
