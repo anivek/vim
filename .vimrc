@@ -7,7 +7,7 @@ set autoindent
 set cindent
 
 " allow backspacing over indent, line breaks, stop at the start of an insert
-set backspace=indent,eol,start 
+set backspace=indent,eol,start
 set wrap
 set wrapmargin=4
 "set textwidth=79
@@ -56,6 +56,27 @@ set rtp+=$HOME/.local/lib/python2.7/site-packages/powerline/bindings/vim/
 set laststatus=2
 " Use 256 colours (Use this setting only if your terminal supports 256 colours)
 set t_Co=256
+
+"
+" Statusline (https://gist.github.com/TaurusOlson/5626884)
+"
+set statusline =
+" Buffer number
+set statusline +=[%n]
+" File description
+set statusline +=%f\ %h%m%r%w
+" Filetype
+set statusline +=%y
+" Name of the current function
+set statusline +=\ [Fun(%{tagbar#currenttag('%s','')})]
+" Name of the current branch (needs fugitive.vim)
+set statusline +=\ %{fugitive#statusline()}
+" Date of the last time the file was saved
+set statusline +=\ %{strftime(\"[%d/%m/%y\ %T]\",getftime(expand(\"%:p\")))}
+" Total number of lines in the file
+set statusline +=%=%-10L
+" Line, column and percentage
+set statusline +=%=%-14.(%l,%c%V%)\ %P
 
 "
 " Tagbar
