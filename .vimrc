@@ -48,14 +48,13 @@ execute pathogen#infect()
 
 "
 " Powerline
-" (https://github.com/Lokaltog/powerline)
-" (http://askubuntu.com/questions/283908/how-can-i-install-and-use-powerline-plugin)
-"
-set rtp+=$HOME/.local/lib/python2.7/site-packages/powerline/bindings/vim/
 " Always show statusline
 set laststatus=2
 " Use 256 colours (Use this setting only if your terminal supports 256 colours)
 set t_Co=256
+python3 from powerline.vim import setup as powerline_setup
+python3 powerline_setup()
+python3 del powerline_setup
 
 "
 " Statusline (https://gist.github.com/TaurusOlson/5626884)
